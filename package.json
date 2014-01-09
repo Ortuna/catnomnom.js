@@ -1,0 +1,10 @@
+{
+  "name": "catnomnom",
+  "version": "0.0.1",
+  "devDependencies": {
+  	"mocha": "~1.16.0"
+  },
+	"scripts": {
+		"test": "mocha \"specs/**/*.js\" -R spec"
+	}
+}
