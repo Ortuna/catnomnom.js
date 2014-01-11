@@ -1,9 +1,6 @@
-var api    = require('../lib/reddit_api')
+var api  = require(process.cwd() + '/lib/reddit_api')
 , assert = require('assert')
-, sinon  = require('sinon')
-, nock   = require('nock')
-, fs     = require('fs')
-, xhr, requests;
+, nock   = require('nock');
 
 //Fixtures
 var setupFixtures = function() {
