@@ -43,7 +43,7 @@ describe("NomNomApi", function() {
 
   it('can find all items in the database', function(done) { 
     subject.insert(cats, function() {
-      subject.findAll(function(err, docs) {
+      subject.findAll(function(docs) {
         assert.equal(docs[0].type, "image");
         assert.equal(docs.length, 2);
         done();
