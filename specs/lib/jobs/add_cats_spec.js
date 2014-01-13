@@ -1,9 +1,9 @@
 var AddCats = require(process.cwd() + '/lib/jobs/add_cats')
-, api       = require(process.cwd() + '/lib/reddit_api')
-, assert    = require('assert')
-, sinon     = require('sinon')
-, nock      = require('nock')
-, mongo     = require('mongodb').MongoClient
+  , api       = require(process.cwd() + '/lib/reddit_api')
+  , assert    = require('assert')
+  , sinon     = require('sinon')
+  , nock      = require('nock')
+  , mongo     = require('mongodb').MongoClient
 
 describe('AddCats', function(){
   var subject, client, sandbox; 
@@ -70,4 +70,5 @@ describe('AddCats', function(){
       });
     });
   });
+
 });

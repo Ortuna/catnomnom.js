@@ -1,6 +1,6 @@
 var api  = require(process.cwd() + '/lib/reddit_api')
-, assert = require('assert')
-, nock   = require('nock');
+  , assert = require('assert')
+  , nock   = require('nock');
 
 //Fixtures
 var setupFixtures = function() {
