@@ -45,6 +45,7 @@ describe("NomNomApi", function() {
     subject.insert(cats, function() {
       subject.findAll(function(err, docs) {
         assert.equal(docs[0].type, "image");
+        assert.equal(docs.length, 2);
         done();
       });
     });
